@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.regulation {
+  width: 1400px;
+  margin: auto;
+}
+
+header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  padding: 5px 15px;
+  color: #bbbac0;
+  font-size: 18px;
+}
+
+/* fim do header */
+
+.container {
+  display: grid;
+}
+
+.image img {
+  max-width: 100%;
+}
