@@ -29,8 +29,56 @@ nav li {
 
 .container {
   display: grid;
+  grid-template-areas:
+    "img    img   aside"
+    "tittle desc  aside "
+    "cards  cards cards"
+  ;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 320px 1fr 150px;
+  gap: 10px;
+  margin: auto;
 }
+
 
 .image img {
   max-width: 100%;
+  max-height: 100%;
+
+}
+
+.image {
+  grid-area: img;
+
+}
+
+.tittle {
+  grid-area: tittle;
+}
+
+.desc {
+  grid-area: desc;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.cards {
+  grid-area: cards;
+  display: flex;
+  background-color: royalblue;
+}
+
+
+/* cards */
+
+.card {
+  display: flex;
+  padding: 5px;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
 }
